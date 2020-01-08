@@ -3,6 +3,7 @@
 
 call plug#begin('~/vimfiles/plugged')
 Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
@@ -24,8 +25,9 @@ endif
 syntax on
 filetype plugin indent on
 
-colorscheme nord
-let g:airline_theme = "nord"
+set background=light
+colorscheme gruvbox
+let g:airline_theme = "gruvbox"
 
 set number
 set showmatch
