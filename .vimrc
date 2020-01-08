@@ -1,9 +1,11 @@
+
 " vim-plug
 
 call plug#begin('~/vimfiles/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline'
 Plug 'pangloss/vim-javascript'
 call plug#end()
 
@@ -23,6 +25,7 @@ syntax on
 filetype plugin indent on
 
 colorscheme nord
+let g:airline_theme = "nord"
 
 set number
 set showmatch
