@@ -1,7 +1,28 @@
+" vim-plug
+
+call plug#begin('~/vimfiles/plugged')
+Plug 'arcticicestudio/nord-vim'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
+Plug 'pangloss/vim-javascript'
+call plug#end()
+
+" True colors
+
+if (has("nvim"))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 " Basic stuff
 
-colorscheme blue
+syntax on
+filetype plugin indent on
+
+colorscheme nord
 
 set number
 set showmatch
@@ -37,4 +58,3 @@ nmap <c-s> :w<cr>
 imap <c-s> <esc>:w<cr>a
 nmap <c-d> :noh<cr>
 imap <c-d> <esc>:noh<cr>a
-
