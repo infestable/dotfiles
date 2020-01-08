@@ -1,7 +1,7 @@
 
 " vim-plug
 
-call plug#begin('~/vimfiles/plugged')
+call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
